@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <form id="register"></form>>
+          <div class="row">
+            <h4>Register a new account</h4>
+            <div class="input-group input-group-icon">
+              <input type="email" placeholder="Email Adress"/>
+              <div class="input-icon"><i class="fa fa-envelope"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+              <input type="password" placeholder="Password"/>
+              <div class="input-icon"><i class="fa fa-key"></i></div>
+            </div>
+          </div>
+          <div class="row">
+            <h4>Terms and Conditions</h4>
+            <div class="input-group">
+              <input type="checkbox" id="terms"/>
+              <label for="terms">I accept the terms and conditions confirm that I have read the privacy policy.</label>
+            </div>
+            <p>Already have an account? Please login from <a href="login.html">here</a></p>
+          </div>
+          <button id="Submit" onclick="window.location.href='login.html';">Register</button>
+        </form>
+      </div>
+</body>
+</html>

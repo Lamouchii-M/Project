@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<form class="form">
+    <h2>Your Profile Information</h2>
+    <div class="form-group">
+        <label for="email">First Name:</label>
+        <div class="relative">
+            <input class="form-control" id="firstname" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g. Mehdi" autocomplete="" placeholder="Please Type your first name here...">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Last Name:</label>
+        <div class="relative">
+            <input class="form-control" id="lastname" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g.  Lamouchi " autocomplete="" placeholder="Please Type your last name here...">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <div class="relative">
+            <input class="form-control" type="email" required="" placeholder="Please Type your email address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <i class="fa fa-envelope"></i>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Phone Number:</label>
+        <div class="relative">
+            <input class="form-control" type="text" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Please Type your Mobile Number...">
+            <i class="fa fa-phone"></i>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Current Height:</label>
+        <div class="relative">
+            <input class="form-control" id="height" type="text" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Please type your current height in cm">
+            <i class="fa fa-long-arrow-up"></i>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Current Weight:</label>
+        <div class="relative">
+            <input class="form-control" id="weight" type="text" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Please type your current weight in kg">
+            <i class="fa fa-balance-scale"></i>
+        </div>
+    </div>
+    <br>
+      <div class="form-group">
+          <label for="email">City:</label>
+        <div class="relative">
+            <input class="form-control" type="text" id="contact" required="" placeholder="Please type the city you live in...">
+            <i class="fa fa-map-marker"></i>
+        </div>
+    </div>
+    <br>
+                   
+    <div class="tright">
+        <a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-fw fa-refresh"></i> Reset </button></a>
+        <a href=""><button class="movebtn movebtnsu" type="Submit" onclick="functionSubmit">Save <i class="fa fa-fw fa-paper-plane"></i></button></a>
+    </div>
+  </form>
+
+  <div class="thanks" style="display: none;">
+      <h4>Thank you!</h4>
+      <p><small>Your profile information have been updated.</small></p>
+  </div>
+
+</div>
+<script src="profile.js"></script>
+</body>
+</html>
